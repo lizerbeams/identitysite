@@ -42,290 +42,295 @@
 <script src="./TestHome_files/cms4.2.min.js"></script>
 <style>
 
-/* -----Banner----- */
-.banner{
-	position: relative;
-	overflow: hidden;
-	background: #000;
-	color:#fff;
-	margin-bottom:3em;
-	text-align: center;
-	text-shadow: 0.06897em 0.06897em 0.13793em #333;
-	line-height: 1.4;
-	font-size:120%;
+article>section {
+	padding:1em;
 }
 
-.banner img{
-	position: absolute;
-	left: 0;
-	right:0;
-	min-height:100%;
-	min-width:1000px;
-	object-fit: cover;
+article>section p{
+	margin: 0 0 1em 0;
+	font-size:105%;
 }
 
-.banner .overlay{
-	position: absolute;
-	background: rgba(0,0,0,0.5);
-	width: 100%;
-	top:0;
-	right:0;
-	left:0;
-	bottom:0;
+article>header {
+	padding-left: calc(50% - 390px);
+	padding-right: calc(50% - 390px);
+	text-align:center;
+	padding-top: 2.5em;
+	padding-bottom:2.5em;
 }
 
-.banner .content{
-	position: relative;
-	min-height:400px;
-	width:100%;
+article>header h1{
+	font-weight:900;
+	text-transform: none;
+	font-family: unset;
+	padding-left:.5em;
+	padding-right:.5em;
 }
 
-.banner .identity-column{
-	padding:0;
-}
-
-h2.bannertitle{
-	line-height:1.5;
-	color:#fff;
+article>header p{
 	font-size:130%;
+	margin: 1em 0 0 0;
 }
 
 
-/* -----Columns----- */
-
-.identity-small-1{
-	width:8.33333%;
-}
-.identity-small-2 {
-	width: 16.66667%;
-}
-.identity-small-3 {
-	width: 25%;
-}
-.identity-small-4 {
-	width: 33.33333%;
-}
-.identity-small-5 {
-	width: 41.66667%;
-}
-.identity-small-6 {
-	width: 50%;
-}
-.identity-small-7 {
-	width: 58.33333%;
-}
-.identity-small-8 {
-	width: 66.66667%;
-}
-.identity-small-9 {
-	width: 75%;
-}
-.identity-small-10 {
-	width: 83.33333%;
-}
-.identity-small-11 {
-	width: 91.66667%;
-}
-.identity-small-12 {
-	width: 100%;
-}
-.identity-small-centered {
-	float: none;
-	margin-left: auto;
-	margin-right: auto;
-}
-.identity-small-uncentered {
-	position: static;
-	margin-left: 0;
-	margin-right: 0;
-	float: left;
-}
-
-
-@media screen and (min-width: 40em) {
-	.identity-medium-1{
-		width:8.33333%;
-	}
-	.identity-medium-2 {
-		width: 16.66667%;
-	}
-	.identity-medium-3 {
-		width: 25%;
-	}
-	.identity-medium-4 {
-		width: 33.33333%;
-	}
-	.identity-medium-5 {
-		width: 41.66667%;
-	}
-	.identity-medium-6 {
-		width: 50%;
-	}
-	.identity-medium-7 {
-		width: 58.33333%;
-	}
-	.identity-medium-8 {
-		width: 66.66667%;
-	}
-	.identity-medium-9 {
-		width: 75%;
-	}
-	.identity-medium-10 {
-		width: 83.33333%;
-	}
-	.identity-medium-11 {
-		width: 91.66667%;
-	}
-	.identity-medium-12 {
-		width: 100%;
-	}
-	.identity-medium-centered {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.identity-medium-uncentered {
-		position: static;
-		margin-left: 0;
-		margin-right: 0;
-		float: left;
-	}
-}
-@media screen and (min-width: 64em) {
-	.identity-large-1{
-		width:8.33333%;
-	}
-	.identity-large-2 {
-		width: 16.66667%;
-	}
-	.identity-large-3 {
-		width: 25%;
-	}
-	.identity-large-4 {
-		width: 33.33333%;
-	}
-	.identity-large-5 {
-		width: 41.66667%;
-	}
-	.identity-large-6 {
-		width: 50%;
-	}
-	.identity-large-7 {
-		width: 58.33333%;
-	}
-	.identity-large-8 {
-		width: 66.66667%;
-	}
-	.identity-large-9 {
-		width: 75%;
-	}
-	.identity-large-10 {
-		width: 83.33333%;
-	}
-	.identity-large-11 {
-		width: 91.66667%;
-	}
-	.identity-large-12 {
-		width: 100%;
-	}
-	.identity-large-centered {
-		float: none;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.identity-large-uncentered {
-		position: static;
-		margin-left: 0;
-		margin-right: 0;
-		float: left;
-	}
-}
-.identity-row{
-	margin-left: auto;
-	margin-right: auto;
-	min-height: 1px;
-}
-
-.identity-column{
-	width:75%;
-	margin:auto;
-	padding-left: 0.5rem;
-	padding-right:0.5rem;
-}
-
-/* -----Quick Links----- */
-
-.quick-links{
-	background-color:#00659f;
-}
-
-h2.quick{
-	padding-top: 1em;
-	margin-bottom:0em;
-	color:#fff;
+section h2:first-of-type{
+	font-size: 1.8em;
+	letter-spacing:0.04em;
+	text-transform:none;
 	text-align:center;
 }
 
-h3.quick{
+
+/* -----Quick Links----- */
+
+#quick-links{
+	background-color:#0065a4;
+	padding:0;
 	color:#fff;
-	letter-spacing:0.02em;
-	margin-bottom:0em;
-	text-transform: none;
+	padding-left: calc(50% - 360px);
+	padding-right: calc(50% - 360px);
+}
+
+#quick-links .content {
+	padding:1.5em;
+	max-width:100%;
+}
+
+
+#quick-links h3{
+	letter-spacing:0.04em;
 } 
 
-a.quick{
-	color:#FFF;
-}
-
-.quick-links .pull-left{
-	padding-top:30px;
-	padding-bottom:30px;
-}
-
-/* -----Icons----- */
-
-.icon-white{
+#quick-links .btn-link, #quick-links .btn{
 	color:#fff;
+	text-decoration:underline;
+	background:none;
+	border:none;
+	padding:0;
+	text-align:left;
+	letter-spacing: 0.05em;
+}
+
+#quick-links .btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active{
+	color:#FFF;
+	text-decoration: underline;
+}
+
+#quick-links .icon{
 	font-size:4em;
 }
 
-.icon-blue{
+.icon .color-blue{
 	color:#00A4EC;
-	font-size:4em;
 }
 
 .icon-logo{
-	max-width:55px; 
-	margin:0px 10px;
+	height:60px;
+	margin-bottom:-10px;
 }
-
-/* -----Link Content----- */
 
 .link-content{
-	padding:30px 30px 30px 80px;
-	font-size:1em;
-	color:#fff;
+	padding:10px;
 }
 
-.link-content span{
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: 0.25s ease; 
+.keep-together{
+	white-space:nowrap;
 }
 
-.link-content span:after{
-	content: '\25b8';
+#quick-links .link-content span{
 	color:#00A4EC;
 	position: relative;
 	left: 2px;
+}
+
+#quick-links a:hover + span{
 	transition: 0.25s;
 	-webkit-transition: 0.25s;
-}
-.link-content:hover span:after{
 	left:5px;
-	color:#00A4EC;
 }
+
+
+
+/*------Size-dependent---*/
+
+@media screen and (min-width: 1380px){
+	
+	article>section {
+		padding-left: calc(50% - 490px);
+		padding-right: calc(50% - 490px);
+	}
+	#quick-links{
+		padding-left: calc(50% - 380px);
+		padding-right: calc(50% - 380px);
+	}
+	#quick-links .pull-left{
+		padding:10px;
+		width:100%;
+	}
+	#quick-links .quick-2col-row{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 1001px){
+
+	article>section {
+		padding-left: calc(18.75% + 30px);
+		padding-right: calc(18.75% + 30px);
+	}
+
+	
+	#quick-links .pull-left{
+		padding:10px;
+		width:100%;
+	}
+
+	#quick-links .quick-2col-row{
+		display: none;
+	}
+
+	#quick-links .quick-column{
+		padding-left:.75em;
+		padding-right:.75em;
+	}
+	
+}
+
+@media screen and (max-width: 1000px) and (min-width: 801px){
+	
+	article>header {
+		padding-left: calc(50% - 350px);
+		padding-right: calc(50% - 350px);
+		font-size:90%;
+	}
+
+	#quick-links{
+		padding-left:calc(50% - 360px);
+		padding-right:calc(50% - 360px);
+	}
+
+
+	#quick-links .pull-left{
+		padding:10px;
+		width:100%;
+	}
+
+	#quick-links .quick-2col-row{
+		display:none;
+	}
+
+
+
+}
+
+@media screen and (max-width: 800px) and (min-width: 601px){
+	article>header {
+		padding-left: calc(50% - 290px);
+		padding-right: calc(50% - 290px);
+	}
+
+	article>header h1{
+		font-size:2.3em;
+	}
+
+	article>header p{
+		font-size:1.1em;
+		padding-right: .5rem;
+		padding-left:.5rem;
+	}
+
+	
+	#quick-links .pull-left{
+		margin:0px 0px 10px 0px;
+		width:100%;
+	}
+
+	#quick-links .quick-column{
+		padding-left: calc(5% + 5px);
+		padding-right: calc(5% + 5px);
+		width:50%;
+		text-align:center;
+		margin-bottom:2rem;
+	}
+
+	#quick-links .quick-3col-row{
+		display:none;
+	}
+
+	.quick-2col-row{
+		padding-right:10%;
+		padding-left:10%;
+	}
+
+	#quick-links .content{
+		padding:1em;
+	}
+
+	.link-content{
+		padding:0px;
+		font-size:110%;
+	}
+
+	#quick-links .btn-link, #quick-links .btn{
+		text-align:center;
+	}
+
+}
+
+@media screen and (max-width: 600px){
+	article>header {
+		padding-left: calc(50% - 240px);
+		padding-right: calc(50% - 240px);
+/*		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;*/
+	}
+	article>header h1{
+		font-size:2.1em;
+	}
+
+	article>header p{
+		font-size:1.1em;
+		padding-right: .5rem;
+		padding-left:.5rem;
+	}
+
+
+	#quick-links{
+		font-size:1rem;
+	}
+
+	#quick-links h2{
+		font-size:150%;
+		margin-bottom:1em;
+	}
+
+	#quick-links .pull-left{
+		padding:0px;
+	}
+
+	#quick-links .quick-column{
+		margin-bottom:2em;
+	}
+	#quick-links .quick-3col-row{
+		display:none;
+	}
+	.quick-2col-row{
+		width: 350px;
+		padding-left:20px;
+		margin:0px auto;
+	}
+	.link-content{
+		padding:0 0 0 90px;
+		width:100%;
+		font-size:110%;
+	}
+}
+/*----Miscellanous----*/
+
+.color-blue{
+	color:#0065a4;
+}
+
 
 
 
@@ -687,6 +692,9 @@ a.quick{
 		</div>
 	</div>
 	<div class="background hide-print">
+		<div class="image">
+			<img src="./TestHome_files/header_home_3.jpg"  alt="Photo of assorted printed university materials"  width="2000"  height="600">
+		</div>
 		<script>
 			var noscript = document.querySelectorAll('noscript[data-video-src]');
 			for (i=0;i<noscript.length;i++) {
@@ -723,132 +731,164 @@ a.quick{
 	</div>
 
 <div role="main" id="main">
-	<section class="banner">
-		<img src="./TestHome_files/header_home_3.jpg"  alt="Photo of assorted printed university materials"  width="2000"  height="600">
-		<div class="overlay">
-		</div>
+	<article>
+	<header id="introduction">
+			<h1 class="color-blue">Guidelines and Resources for University Communication</h1>
+			<p>As campus communicators, messages and materials we produce or share represent Grand Valley's image and brand. These tools, guidelines, and standards are designed to help you communicate with confidence as you represent the university.</p>
+	</header>
+	<section id="quick-links">
 		<div class="content">
-			<div class="identity-row">
-				<div class="identity-large-12 identity-medium-12 identity-small-12 identity-column">
-						<!--<h2 class="padding-none bannertitle h2">Tools, Guidelines, and Standards for University Communication</h2> -->
-						<p>What we do, create, and promise influences the perception of Grand Valley.
-						</p>
-						<p>Expressing a unified identity—in look, tone, and consistency—relies on our campus communicators. By incorporating the information from this site into your work, you play a vital role in advancing Grand Valley's identity.
-						</p>
-						<p>These tools, guidelines, and standards apply to all GVSU colleges, departments, centers, institutes, and non-athletic administrative offices.
-						</p>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="quick-links" aria-labelledby="quick-header">
-		<div class="content">
-			<div class="row-gutter">
-				<div class="col-12 col-sm-12 chunk-margin">
-						<h2 class="h2 quick" id="quick-header">Quick Links</h2> 
-				</div>
-			</div>
-			<div class="row-gutter">
-				<div class="col-4 col-sm-12 chunk-image chunk-margin">
+			<h2 class="h2 color-white">Quick Links</h2> 
+			<div class="row-gutter quick-3col-row">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
 					<div class="pull-left">
 						<img src="./TestHome_files/logomark_white.png" class="icon-logo" alt="GVSU logo icon">
 					</div>
 					<div class="link-content">
-						<h3 class="padding-none h3 quick">Logos</h3>
-						<span><a class="quick" href="https://www.gvsu.edu/identity/download-a-grand-valley-logo-21.htm">Download a logo</a></span>
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Logos</h3>
+						<a class="btn-link btn" href="https://www.gvsu.edu/identity/download-a-grand-valley-logo-21.htm">Download a logo</a><span>&#9656;</span>
 					</div>			
 				</div>	
-				<div class="col-4 col-sm-12 chunk-image chunk-margin">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
 					<div class="pull-left">	
-						<span class="far fa-edit icon-blue" alt="pencil icon"></span>
+						<span class="far fa-edit icon color-white" alt="pencil icon"></span>
 					</div>			
 					<div class="link-content">
-						<h3 class="padding-none h3 quick">Writing</h3>
-						<span><a class="quick" href="https://www.gvsu.edu/identity/writing-standards.htm">Review university standards</a></span>
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Writing</h3>
+						<a class="btn-link btn" href="https://www.gvsu.edu/identity/writing-standards.htm">Official writing standards</a><span>&#9656;</span>
 					</div>
 				</div>
-				<div class="col-4 col-sm-12 chunk-image chunk-margin">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
 					<div class="pull-left">
-						<span class="fas fa-desktop icon-white" alt="computer monitor icon"></span>
+						<span class="fas fa-desktop icon color-white" alt="computer monitor icon"></span>
 					</div>
 					<div class="link-content">
-						<h3 class="padding-none h3 quick">Web & Mobile</h3>
-						<span><a class="quick" href="https://www.gvsu.edu/identity/web-12.htm">Online communication guidelines</a></span>
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Web & Mobile</h3>
+						<a class="btn-link btn" href="https://www.gvsu.edu/identity/web-12.htm">Online communication</a><span>&#9656;</span>
 					</div>
 				</div>	
 			</div>
-			<div class="row-gutter">
-				<div class="col-4 col-sm-12 chunk-image chunk-margin">
+			<div class="row-gutter quick-3col-row">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
 					<div class="pull-left">
-						<span class="fas fa-fill-drip icon-blue" alt="paint bucket icon"></span>
+						<span class="fas fa-fill-drip icon color-white" alt="paint bucket icon"></span>
 					</div>
 					<div class="link-content">
-						<h3 class="padding-none h3 quick">Color</h3>
-						<span><a class="quick" href="https://www.gvsu.edu/identity/design-elements-84.htm">Official color palette</a></span>
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Color</h3>
+						<a class="btn btn-link" href="https://www.gvsu.edu/identity/design-elements-84.htm">Official color palette</a><span>&#9656;</span>
 					</div>
 				</div>	
-				<div class="col-4 col-sm-12 chunk-image cms-chunk-class-center chunk-margin">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
 					<div class="pull-left">
-						<span class="fas fa-font icon-white" alt="letter A icon"></span>				
+						<span class="fas fa-font icon color-white" alt="letter A icon"></span>
 					</div>
 					<div class="link-content">
-						<h3 class="padding-none h3 quick">Typography</h3>
-						<span><a class="quick" href="https://www.gvsu.edu/identity/design-elements-84.htm">Fonts and usage</a></span>
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Typography</h3>
+						<a class="btn btn-link" href="https://www.gvsu.edu/identity/design-elements-84.htm">Fonts and usage</a><span>&#9656;</span>
 					</div>
 				</div>							
 				
-				<div class="col-4 col-sm-12 chunk-image cms-chunk-class-center chunk-margin">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
 					<div class="pull-left">					
-						<span class="fas fa-shield-alt icon-blue" alt="shield icon"></span>				
+						<span class="fas fa-shield-alt icon color-white" alt="shield icon"></span>				
 					</div>
 					<div class="link-content">
-						<h3 class="padding-none h3 quick">Licensing</h3>
-						<span><a class="quick" href="https://www.gvsu.edu/identity/trademarkcopyright-52.htm">Trademarks and licensing</a></span>
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Licensing</h3>
+						<a class="btn btn-link" href="https://www.gvsu.edu/identity/trademarkcopyright-52.htm">Trademarks and licensing</a><span>&#9656;</span>
+					</div>
+				</div>
+			</div>
+			<div class="row-gutter quick-2col-row">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
+					<div class="pull-left">
+						<img src="./TestHome_files/logomark_white.png" class="icon-logo" alt="GVSU logo icon">
+					</div>
+					<div class="link-content">
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Logos</h3>
+						<a class="btn-link btn" href="https://www.gvsu.edu/identity/download-a-grand-valley-logo-21.htm">Download a logo</a>
+					</div>			
+				</div>	
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
+					<div class="pull-left">	
+						<span class="far fa-edit icon color-white" alt="pencil icon"></span>
+					</div>			
+					<div class="link-content">
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Writing</h3>
+						<a class="btn-link btn" href="https://www.gvsu.edu/identity/writing-standards.htm">Official writing standards</a>
+					</div>
+				</div>
+			</div>
+			<div class="row-gutter quick-2col-row">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
+					<div class="pull-left">
+						<span class="fas fa-desktop icon color-white" alt="computer monitor icon"></span>
+					</div>
+					<div class="link-content">
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Web & Mobile</h3>
+						<a class="btn-link btn" href="https://www.gvsu.edu/identity/web-12.htm">Online communication</a>
+					</div>
+				</div>
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
+					<div class="pull-left">
+						<span class="fas fa-fill-drip icon color-white" alt="paint bucket icon"></span>
+					</div>
+					<div class="link-content">
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Color</h3>
+						<a class="btn btn-link" href="https://www.gvsu.edu/identity/design-elements-84.htm">Official color palette</a>
+					</div>
+				</div>	
+			</div>
+			<div class="row-gutter quick-2col-row">
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
+					<div class="pull-left">
+						<span class="fas fa-font icon color-white" alt="letter A icon"></span>
+					</div>
+					<div class="link-content">
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Typography</h3>
+						<a class="btn btn-link" href="https://www.gvsu.edu/identity/design-elements-84.htm">Fonts and usage</a>
+					</div>
+				</div>							
+				<div class="col-4 col-sm-12 chunk-image chunk-margin quick-column">
+					<div class="pull-left">					
+						<span class="fas fa-shield-alt icon color-white" alt="shield icon"></span>				
+					</div>
+					<div class="link-content">
+						<h3 class="padding-none margin-none color-white h3 text-capitalize">Licensing</h3>
+						<a class="btn btn-link" href="https://www.gvsu.edu/identity/trademarkcopyright-52.htm">Trademarks and licensing</a>
 					</div>
 				</div>
 			</div>
 		</div>	
-	</section>						
-	<div class="content">
-		<div class="row-gutter">
-			<div class="col-12 col-sm-12 chunk-hr chunk-margin">
-				<div class="chunk-inner">
-					<hr> 
+	</section>
+	<section id="about">					
+		<div class="content">
+			<div class="row-gutter">
+				<div class="col-12 col-sm-12 chunk-hr chunk-margin">
+					<h2 class="color-blue">About this Site</h2>
+					<p>What we do, create, and promise influences the perception of Grand Valley.</p> 
+					<p>Expressing a unified identity—in look, tone, and consistency—relies on our campus communicators. By incorporating the information from this site into your work, you play a vital role in advancing Grand Valley's identity. apply to all GVSU colleges, departments, centers, institutes, and non-athletic administrative offices.</p>
+					<h2>Need some help?</h2>
+					<p>There's a lot here, we know. But a strong, consistent, powerful brand benefits everyone at Grand Valley. We're here to help you, too. <a href="http://www.gvsu.edu/im/" target="_blank">Institutional Marketing</a> can answer your questions and offer advice on marketing strategy, design, writing, and websites.</p>
+				</div>
+			</div>
+			<div class="hide-print">
+				<br>
+				<hr>
+				<div class="row">
+					<div class="col-6">
+						<span class="text-muted">Page last modified November 5, 2018</span>
+						<a href="https://www.gvsu.edu/cms4/admin/94807988-C47A-2A7B-05628C365AC3C2FA/content-edit.htm?contentId=BA212DC1-C1EF-8F02-52DCD0495356A782" class="text-nodecoration" title="Edit this page">
+							<span class="icon icon-life-ring"></span>
+							<span class="sr-only">Edit this page</span>
+						</a>
+					</div>
+					<div class="col-6 text-right">
+						<a href="https://www.gvsu.edu/identity/cms-problem-index.htm?url=test-home-this-title-will-not-be-here-89.htm?contentBuId%3DF4B9BEDF%2DF702%2D8AB7%2DAB7B94DE0BA03A50" class="cms-report-problem">Report a problem with this page</a>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row-gutter">
-			<div class="col-2 hide-sm">
-			</div>		
-			<div class="col-8 col-sm-12 chunk-fact chunk-margin">
-				<div class="chunk-inner">
-					<div class="text-center">
-						<p class="h2 color-black"><span id="icon-F4BAB79A-D888-249F-A2E409BDA0C13D79" class="icon icon-question-circle icon-5x" aria-label="Icon of a question-circle" aria-labelledby="label-F4BAB79A-D888-249F-A2E409BDA0C13D79 icon-F4BAB79A-D888-249F-A2E409BDA0C13D79"></span></p>
-						<div id="label-F4BAB79A-D888-249F-A2E409BDA0C13D79">
-							<p class="h2 padding-none margin-none">Need some help?</p>
-							<p>There's a lot here, we know. But a strong, consistent, powerful brand benefits everyone at Grand Valley. We're here to help you, too. <a href="http://www.gvsu.edu/im/" target="_blank">Institutional Marketing</a>&nbsp;can answer your questions and offer advice on marketing strategy, design, writing, and websites.</p>
-						</div>
-					</div> 
-				</div>
-			</div>
-		</div>
-		<div class="hide-print">
-			<br>
-			<hr>
-			<div class="row">
-				<div class="col-6">
-					<span class="text-muted">Page last modified November 5, 2018</span>
-					<a href="https://www.gvsu.edu/cms4/admin/94807988-C47A-2A7B-05628C365AC3C2FA/content-edit.htm?contentId=BA212DC1-C1EF-8F02-52DCD0495356A782" class="text-nodecoration" title="Edit this page">
-						<span class="icon icon-life-ring"></span>
-						<span class="sr-only">Edit this page</span>
-					</a>
-				</div>
-				<div class="col-6 text-right">
-					<a href="https://www.gvsu.edu/identity/cms-problem-index.htm?url=test-home-this-title-will-not-be-here-89.htm?contentBuId%3DF4B9BEDF%2DF702%2D8AB7%2DAB7B94DE0BA03A50" class="cms-report-problem">Report a problem with this page</a>
-				</div>
-			</div>
-		</div>
-	</div>
+	</section>
 </div>
 <div role="contentinfo">
 	<div class="footer hide-print">
@@ -917,5 +957,6 @@ a.quick{
 		</div>
 	</div>
 </div>
+</article>
 </body>
 </html>
